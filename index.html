@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/todo.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header class="todoHeader" >
+        <h1>Yapılacak Listesi</h1>
+        <button id="addTodoBtn">➕</button>
+      </header>
+
+      <div class="todosList" id="todoContainer"> <h3>Yapılacak İşler - <span class="activeTodoCount">0</span></h3></div>
+
+      <dialog id="modal">
+        <h2 class="modelAddNew">Todo Ekle</h2>
+        <h2 class="modelEdit"></h2>
+      <form  method="dialog" autocomplete="off" id="todoForm">
+        <input required type="text" name="name" placeholder="yeni bir görev ekle"/>
+        <button class="modelAddNew">Ekle</button> 
+        <button  class="modelEdit">Düzenle</button>
+        <button class="exit" type="button" onclick="todoForm.reset();modal.close();">Vazgeç</button></p>
+        <input type="hidden" name="id" value="">
+      </form>
+    </dialog>
+
+
+     
+
+  
+    </div>
+  </body>
+</html>
